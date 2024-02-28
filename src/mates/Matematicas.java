@@ -1,7 +1,7 @@
 package mates;
 
 public class Matematicas {
-    static int r = 1;
+    static double r = 1;
     static int dentro=0;
     public static double generarNumeroPiRecursivo (long pasos){
 
@@ -16,9 +16,10 @@ public class Matematicas {
                 dentro++;
             }
 
-            generarNumeroPiRecursivo(pasos - 1);
-            double pi = 4.0 * dentro / pasos;
-            return pi;
+
+            generarNumeroPiRecursivo(--pasos);
         }
+        double pi = 4.0 * dentro / pasos;
+        return pi;
     }
 }

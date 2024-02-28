@@ -1,1 +1,1 @@
-# practica2
+Utilizo el método de Montecarlo para calcular la aproximación del pi de forma número recursiva.
